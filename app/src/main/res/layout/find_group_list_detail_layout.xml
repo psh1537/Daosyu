@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ImageView
+        android:src="@drawable/gs"
+        android:id="@+id/find_group_image"
+        android:layout_width="match_parent"
+        android:background="#000000"
+        android:layout_height="150dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="#AA000000">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/profile_image"
+                android:layout_width="46dp"
+                android:layout_height="46dp"
+                android:src="@drawable/human"
+                app:border_width="1dp"
+                app:border_color="#FF000000"
+                android:layout_marginBottom="30dp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="8"
+            android:layout_height="50dp"
+            android:orientation="vertical"
+            android:background="#AA000000">
+
+            <TextView
+                android:textColor="#ffffff"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="5dp"
+                android:textSize="15sp"
+                android:id="@+id/small_group_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="영화와 커피가 만날 때"/>
+
+            <TextView
+                android:textColor="#ffffff"
+                android:textSize="11sp"
+                android:id="@+id/small_group_location"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="서울시 중량구"/>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:layout_height="50dp"
+            android:background="#AA000000"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/group_people_number"
+                android:textSize="25sp"
+                android:textColor="#FFFFDD00"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="15"/>
+
+            <TextView
+                android:textSize="20sp"
+                android:textColor="#ffffffff"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" 명"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="8"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_marginLeft="5dp"
+            android:id="@+id/small_group_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:text="중량구에서 영화와 커피 마실분 구합니다..."/>
+
+        <TextView
+            android:layout_marginLeft="5dp"
+            android:id="@+id/small_group_intro"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="중량구에서 외롭고 심심하신분 모십니다..
+            25~30세 남녀 모십니다
+            여자분 대 환영~~!!"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <Button
+            android:textColor="#ffffffff"
+            android:id="@+id/group_join"
+            android:background="#16512f"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="모임 가입하기"
+            android:onClick="joinGroup"/>
+    </LinearLayout>
+</LinearLayout>

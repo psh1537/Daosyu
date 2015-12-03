@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <Button
+        android:id="@+id/findMember"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#fffbfb"
+        android:text="맴버 찾기"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:background="#d2d1cb"
+        android:text="모임 맴버"/>
+
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:orientation="vertical">
+
+       <ListView
+           android:id="@+id/member_list"
+           android:layout_width="match_parent"
+           android:layout_height="match_parent">
+
+       </ListView>
+
+   </LinearLayout>
+
+</LinearLayout>

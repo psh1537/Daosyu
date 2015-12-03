@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp"
+    android:orientation="vertical">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/profile_image"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:src="@drawable/human"
+        app:border_width="1dp"
+        app:border_color="#FF000000"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="30dp"/>
+
+    <Button
+        android:id="@+id/upload_image"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="업로드"
+        android:onClick="groupJoin"/>
+
+    <EditText
+        android:id="@+id/group_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:hint="모임 이름"/>
+
+    <EditText
+        android:id="@+id/group_region"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:hint="활동 지역"/>
+
+    <Spinner
+        android:id="@+id/group_people"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </Spinner>
+
+    <EditText
+        android:id="@+id/group_simple"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:hint="한 줄 소개"/>
+
+    <EditText
+        android:id="@+id/group_detail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:hint="상세 소개"/>
+
+    <Button
+        android:layout_gravity="center_horizontal"
+        android:id="@+id/group_join"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="모임 등록"
+        android:onClick="groupJoin"/>
+
+
+</LinearLayout>

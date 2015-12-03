@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="50dp"
+    android:orientation="vertical">
+
+    <EditText
+        android:id="@+id/notice_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="15dp"
+        android:hint="공지 제목(20자)"/>
+
+    <EditText
+        android:id="@+id/notice_detail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="공지 내용을 입력해 주세요"/>
+
+    <Button
+        android:layout_gravity="center_horizontal"
+        android:id="@+id/notice_create"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="공지 등록"
+        android:onClick="createNotice"/>
+
+</LinearLayout>
