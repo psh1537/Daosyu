@@ -12,6 +12,7 @@ import android.widget.Button;
 import android.widget.Toast;
 
 import daosyu.com.snslogin.R;
+import de.hdodenhof.circleimageview.CircleImageView;
 
 /**
  * Created by parksh on 2015-11-20.
@@ -21,6 +22,7 @@ public class SmallGroupActivity extends AppCompatActivity {
     GroupFragmentAdapter groupFragmentAdapter;
     Toolbar toolbar;
     Button group_information, group_jungmo, group_album, group_member;
+
 
 
     @Override
