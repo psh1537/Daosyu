@@ -29,7 +29,7 @@ import daosyu.com.snslogin.R;
 /**
  * Created by parksh on 2015-11-23.
  */
-public class MainViewActivity extends AppCompatActivity implements AdapterView.OnItemClickListener{
+public class MainViewActivity extends AppCompatActivity {
     ViewPager viewPager;
     MainAdapter mainAdapter;
     private BackPressCloseHandler backPressCloseHandler;
@@ -74,12 +74,14 @@ public class MainViewActivity extends AppCompatActivity implements AdapterView.O
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
 
+
         viewPager.addOnPageChangeListener(new ViewPager.OnPageChangeListener() {
             @Override
             public void onPageScrolled(int position, float positionOffset, int positionOffsetPixels) {
 
             }
 
+            //페이지가 이동 할 때마다 툴바의 제목과 버튼의 배경색이 변함
             @Override
             public void onPageSelected(int position) {
                 if (position == 0) {
@@ -143,8 +145,6 @@ public class MainViewActivity extends AppCompatActivity implements AdapterView.O
         });
 
 
-        listView.setOnItemClickListener(this);
-
     }
 
     public void menuClick(View view){
@@ -192,13 +192,6 @@ public class MainViewActivity extends AppCompatActivity implements AdapterView.O
             return  true;
         }
         return super.onOptionsItemSelected(item);
-    }
-
-    @Override
-    public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-        if(position == 0){
-            Toast.makeText(getApplicationContext(), "456546546", Toast.LENGTH_LONG).show();
-        }
     }
 
 }

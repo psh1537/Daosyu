@@ -50,14 +50,14 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginBottom="10dp"
-        android:hint="한 줄 소개"/>
+        android:hint="한줄 소개"/>
 
     <EditText
         android:id="@+id/group_detail"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginBottom="10dp"
-        android:hint="상세 소개"/>
+        android:hint="모임 설명"/>
 
     <Button
         android:layout_gravity="center_horizontal"

@@ -46,6 +46,7 @@ public class MyGroupFragment extends Fragment {
         master_view.setAdapter(myGroupAdapter);
         mygroup_view.setAdapter(myGroupAdapter);
 
+        //내가 그룹장인 경우...
         master_view.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
@@ -53,6 +54,7 @@ public class MyGroupFragment extends Fragment {
             }
         });
 
+        //내가 그룹원인 경우...
         mygroup_view.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {

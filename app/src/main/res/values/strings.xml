@@ -30,4 +30,10 @@
 
     <string name="open">OPEN</string>
     <string name="close">CLOSE</string>
+
+    <string-array name="people">
+        <item>10명</item>
+        <item>20명</item>
+        <item>30명</item>
+    </string-array>
 </resources>
