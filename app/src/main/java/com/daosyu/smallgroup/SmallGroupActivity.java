@@ -45,6 +45,9 @@ public class SmallGroupActivity extends AppCompatActivity {
         toolbar.setTitle("정보");
         toolbar.setTitleTextColor(Color.WHITE);
 
+        group_information.setBackgroundColor(Color.rgb(0, 150, 136));
+        group_information.setTextColor(Color.WHITE);
+
         setSupportActionBar(toolbar);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 

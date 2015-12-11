@@ -58,6 +58,20 @@ public class InformationView extends LinearLayout {
                 } else if (position == 1) {
                     Toast.makeText(getContext(), "삭제", Toast.LENGTH_SHORT).show();
                 }
+
+
+            }
+        });
+
+        listpop.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
+            @Override
+            public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
+
+            }
+
+            @Override
+            public void onNothingSelected(AdapterView<?> parent) {
+
             }
         });
 

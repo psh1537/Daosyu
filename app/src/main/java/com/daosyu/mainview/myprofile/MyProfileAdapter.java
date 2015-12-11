@@ -1,6 +1,7 @@
 package com.daosyu.mainview.myprofile;
 
 import android.content.Context;
+import android.content.Intent;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
@@ -24,6 +25,8 @@ public class MyProfileAdapter extends BaseAdapter{
 
     public MyProfileAdapter(Context context) {
         this.context = context;
+
+
 
         for(int i=0; i<1; i++){
             MyProfileData dto = new MyProfileData();
@@ -55,6 +58,7 @@ public class MyProfileAdapter extends BaseAdapter{
     @Override
     public View getView(int position, View convertView, ViewGroup parent) {
         View view = null;
+
 
         if(convertView == null){
             MyProfileView profileView = new MyProfileView(context);

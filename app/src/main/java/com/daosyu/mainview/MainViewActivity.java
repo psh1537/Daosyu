@@ -1,6 +1,8 @@
 package com.daosyu.mainview;
 
 import android.app.ActionBar;
+import android.app.SearchManager;
+import android.content.Context;
 import android.graphics.Color;
 import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
@@ -10,6 +12,8 @@ import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBarDrawerToggle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
+import android.view.Menu;
+import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.AbsListView;
@@ -18,6 +22,7 @@ import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.FrameLayout;
 import android.widget.ListView;
+import android.widget.SearchView;
 import android.widget.Toast;
 
 import com.daosyu.mainview.myprofile.MyProfileAdapter;
@@ -40,6 +45,8 @@ public class MainViewActivity extends AppCompatActivity {
     ActionBarDrawerToggle toggle;
     ListView listView;
     Button my_group, news, find_group, group_notice;
+    android.support.v7.widget.SearchView searchView;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -72,8 +79,12 @@ public class MainViewActivity extends AppCompatActivity {
 
         setSupportActionBar(toolbar);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+        invalidateOptionsMenu();
+
+        toolbar.setNavigationIcon(R.drawable.stack);  //툴바 아이콘 바꾸는 메소드
 
 
+        my_group.setBackgroundColor(Color.rgb(255, 127, 80));
 
         viewPager.addOnPageChangeListener(new ViewPager.OnPageChangeListener() {
             @Override
@@ -101,6 +112,7 @@ public class MainViewActivity extends AppCompatActivity {
                 if (position == 2) {
                     toolbar.setTitle("모임찾기");
                     find_group.setBackgroundColor(Color.rgb(255,127,80));
+
                 } else {
                     find_group.setBackgroundColor(Color.rgb(0,150,136));
                 }
@@ -193,5 +205,6 @@ public class MainViewActivity extends AppCompatActivity {
         }
         return super.onOptionsItemSelected(item);
     }
+
 
 }

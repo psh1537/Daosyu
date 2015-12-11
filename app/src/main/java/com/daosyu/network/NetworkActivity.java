@@ -11,13 +11,9 @@ import java.net.URL;
  * Created by parksh on 2015-12-03.
  */
 public class NetworkActivity extends Activity{
-
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-
-
 
     }
 

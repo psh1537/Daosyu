@@ -39,6 +39,8 @@ public class MainActivity extends AppCompatActivity {
     AccessToken accessToken;
     Button member_button;
 
+    final String FACE_NAME = "name";
+    final String FACE_ID = "id";
 
 
     @Override
@@ -71,6 +73,12 @@ public class MainActivity extends AppCompatActivity {
 
                 if(profile != null) {
                     String name = profile.getName();
+                    String id = profile.getId();
+
+                    Intent intent = new Intent(getApplicationContext(), MemberActivity.class);
+                    intent.putExtra(FACE_NAME, name);
+                    intent.putExtra(FACE_ID, id);
+                    startActivity(intent);
 
                 }
             }

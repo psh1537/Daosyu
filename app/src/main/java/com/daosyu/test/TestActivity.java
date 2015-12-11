@@ -17,8 +17,7 @@ import daosyu.com.snslogin.R;
  */
 public class TestActivity extends Activity {
     TextView test;
-    MemberActivity memberActivity;
-    HashMap<String, String> profileList;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -27,12 +26,8 @@ public class TestActivity extends Activity {
 
         test = (TextView) findViewById(R.id.test);
 
-        Intent intent = getIntent();
-        profileList = (HashMap<String, String>)intent.getSerializableExtra("profile");
 
-        String id = profileList.get("id");
-
-
+        String id = getIntent().getExtras().getString("regionName");
         test.setText(id);
 
     }
